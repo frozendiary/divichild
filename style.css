@@ -1,0 +1,236 @@
+/*
+ Theme Name:     Frozendiary
+ Theme URI:      http://frozendiary.com
+ Description:    Custom Divi Child Theme
+
+ Author:         overcllocked
+ Author URI:     http://frozendiary.com
+ Template:       Divi
+ Version:        1.0.2
+*/
+
+/*Classes
+
+.fd-header-cta
+.fd-reverse-row
+.fd-list-o
+.fd-list-col-2
+.fd-list-col-3
+.fd-list-col-4
+
+*/
+
+/*Layout settings*/
+
+:root {
+	--primary-color: #1c1d1f;
+	--primary-dark: #000;
+	--accent-color: #1c1d1f;
+	--text-light: #fff;
+	--text-dark: #000;
+	--border-color: #ccc;
+	--background-color: #fff;
+	--transition: 300ms;
+}
+
+/* Override Divi Rules */
+.et_pb_blurb_content {
+	word-break: break-word;
+}
+
+/*Topbar*/
+
+#top-header a:hover {
+	color: var(--accent-color);
+}
+#et-info-phone:hover {
+	color: #3f4448;
+	transition: 300ms;
+}
+#top-header #et-info {
+	text-align: right;
+	width: 50%;
+	float: right;
+}
+#top-header .fd_topbar_ls {
+	width: 50%;
+	float: left;
+}
+.fd_topbar_ls span {
+	font-size: 14px;
+}
+.fd_topbar_ls a:first-child {
+	margin-right: 22px;
+}
+.fd_topbar_ls a {
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	background-color: var(--accent-color);
+	border-radius: 5px;
+	padding: 3px 15px 4px 15px;
+	margin-left: 20px;
+	opacity: 1;
+}
+.fd_topbar_ls a:hover {
+	color: var(--text-light) !important;
+	opacity: .9;
+}
+
+/*Header*/
+
+#top-menu li a {
+	font-weight: 600 !important;
+}
+#main-header .nav li ul a,
+.et-fixed-header #top-menu .sub-menu li.current-menu-item > a {
+	color: var(--text-light) !important;
+}
+
+/*Footer*/
+.footer-widget .fwidget {
+	margin-bottom: 30px !important;
+}
+.fwidget .title {
+	margin-bottom: 15px !important;
+}
+.widget_custom_html {
+	display: block;
+	width: 100%;
+}
+
+#footer-info,
+.et-social-icons {
+	text-align: center;
+	display: block;
+	float: none;
+}
+#footer-info, #footer-info a {
+	font-weight: 600 !important;
+	
+}
+#footer-info a,
+.fd-address li a,
+.fd-contact li a {
+	color: #666;
+}
+.footer-widget a:hover {
+	color: var(--primary-color) !important;
+	transition: var(--transition);
+	opacity: 1;
+}
+
+/* Fd List */
+/* FD list */
+.fd-list-col-4 {
+	column-count: 4;
+}
+.fd-list-col-3 {
+	column-count: 3;
+}
+.fd-list-col-2 {
+	column-count: 2;
+}
+
+/* Fd List o */
+
+.fd-list-o li a {
+	font-weight: 600;
+}
+.fd-list-o li i {
+	width: 30px;
+	font-weight: 600;
+}
+
+/* Fd button */
+.footer-widget .fd-button {
+	color: #fff !important;
+	font-size: 18px;
+	padding: 10px 20px;
+	background-color: var(--accent-color);
+	border-radius: 3px;
+	transition: 300ms;
+}
+.footer-widget .fd-button:hover {
+	color: #fff !important;
+	background-color: var(--primary-color);
+}
+
+/*Bottombar*/
+#footer-info {
+	padding-bottom: 5px;
+}
+#footer-info a:hover {
+	color: var(--accent-color) !important;
+}
+
+#footer-info {
+	text-align: center;
+	float: none;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 981px) {
+	.fd-header-cta a,
+	body #main-header.et-fixed-header .fd-header-cta a {
+		color: var(--text-light) !important;
+		font-size: 15px;
+		font-weight: inherit;
+		text-transform: uppercase;
+		padding: 12px 15px!important;
+		background-color: var(--primary-color);
+		border-radius: 0;
+		margin-bottom: 24px;
+	}
+	.fd-header-cta a:hover,
+	body #main-header.et-fixed-header .fd-header-cta a:hover {
+		opacity: .7 !important;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+/* 	Header */
+	.mobile_menu_bar::before {
+/* 		color: var(--primary-color) !important; */
+	}
+	#main-header .et_mobile_menu {
+		/*background-color: var(--primary-color) !important;*/
+		border-radius: 5px;
+	}
+	.fd-primary-header .header-content {
+		width: 100% !important;
+	}
+	.et_mobile_menu li a {
+		/*color: var(--text-light) !important;*/
+	}
+	.fd-reverse-row {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+
+@media only screen and (max-width: 1024px), (max-width: 768px) {
+	#top-menu li a {
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#top-header .fd_topbar_ls {
+		display: none;
+	}
+	#top-header #et-info {
+		width: 100%;
+		text-align: center;
+	}
+	.fd-list-col-2, .fd-list-col-3, .fd-list-col-4 {
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.fd-list-col-2, .fd-list-col-3, .fd-list-col-4 {
+		column-count: 1;
+	}
+}
