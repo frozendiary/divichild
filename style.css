@@ -3,10 +3,10 @@
  Theme URI:      http://frozendiary.com
  Description:    Custom Divi Child Theme
 
- Author:         overcllocked
+ Author:         Frozendiary
  Author URI:     http://frozendiary.com
  Template:       Divi
- Version:        1.0.2
+ Version:        1.0.3
 */
 
 /*Classes
@@ -24,9 +24,9 @@
 /*Layout settings*/
 
 :root {
-	--primary-color: #03ffff;
+	--primary-color: #114a5d;
 	--primary-dark: #000;
-	--accent-color: #03ffff;
+	--accent-color: #114a5d;
 	--text-light: #fff;
 	--text-dark: #000;
 	--border-color: #ccc;
