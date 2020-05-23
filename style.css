@@ -159,15 +159,15 @@
 
 /*Bottombar*/
 #footer-info {
+	float: none;
+	text-align: center;
 	padding-bottom: 5px;
 }
 #footer-info a:hover {
 	color: var(--accent-color) !important;
 }
-
-#footer-info {
-	text-align: center;
-	float: none;
+#footer-bottom .et-social-icons {
+	padding: 10px;
 }
 
 /* Responsive */
