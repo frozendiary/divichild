@@ -6,7 +6,7 @@
  Author:         Frozendiary
  Author URI:     http://frozendiary.com
  Template:       Divi
- Version:        1.0.5
+ Version:        1.0.6
 */
 
 /*Classes
@@ -161,6 +161,19 @@
 .footer-widget .fd-button:hover {
 	color: #fff !important;
 	background-color: var(--primary-color);
+}
+
+/* Newsletter */
+.et_pb_newsletter_result {
+	max-width: 600px;
+	margin: 0 auto 40px auto;
+	padding: 35px 10px;
+	border: 1px solid var(--text-light);
+}
+.et_pb_newsletter_result h2 {
+	color: var(--text-light) !important;
+	font-size: 18px;
+	line-height: 1.4em;
 }
 
 /*Bottombar*/
