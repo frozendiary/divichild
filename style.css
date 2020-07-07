@@ -6,7 +6,7 @@
  Author:         Frozendiary
  Author URI:     http://frozendiary.com
  Template:       Divi
- Version:        1.0.6
+ Version:        1.0.7
 */
 
 /*Classes
@@ -19,6 +19,7 @@
 .fd-list-col-2
 .fd-list-col-3
 .fd-list-col-4
+.fd-gallery.no-lightbox
 
 */
 
@@ -126,56 +127,6 @@
 	color: var(--text-light) !important;
 }
 
-
-/* Fd List */
-/* FD list */
-.fd-list-col-4 {
-	column-count: 4;
-}
-.fd-list-col-3 {
-	column-count: 3;
-}
-.fd-list-col-2 {
-	column-count: 2;
-}
-
-/* Fd List o */
-
-.fd-list-o li a {
-	font-weight: 600;
-}
-.fd-list-o li i {
-	width: 30px;
-	font-weight: 600;
-}
-
-/* Fd button */
-.footer-widget .fd-button {
-	color: #fff !important;
-	font-size: 18px;
-	padding: 10px 20px;
-	background-color: var(--accent-color);
-	border-radius: 3px;
-	transition: 300ms;
-}
-.footer-widget .fd-button:hover {
-	color: #fff !important;
-	background-color: var(--primary-color);
-}
-
-/* Newsletter */
-.et_pb_newsletter_result {
-	max-width: 600px;
-	margin: 0 auto 40px auto;
-	padding: 35px 10px;
-	border: 1px solid var(--text-light);
-}
-.et_pb_newsletter_result h2 {
-	color: var(--text-light) !important;
-	font-size: 18px;
-	line-height: 1.4em;
-}
-
 /*Bottombar*/
 #footer-info {
 	float: none;
@@ -201,7 +152,58 @@
 	float: none;
 }
 
-/* Responsive */
+/**********************************
+	Custom Modules
+***********************************/
+
+/* Fd List */
+.fd-list-col-4 {
+	column-count: 4;
+}
+.fd-list-col-3 {
+	column-count: 3;
+}
+.fd-list-col-2 {
+	column-count: 2;
+}
+
+/* Fd List o */
+
+.fd-list-o li a {
+	font-weight: 600;
+}
+.fd-list-o li i {
+	width: 30px;
+	font-weight: 600;
+}
+
+/* Newsletter */
+.et_pb_newsletter_result {
+	max-width: 600px;
+	margin: 0 auto 40px auto;
+	padding: 35px 10px;
+	border: 1px solid var(--text-light);
+}
+.et_pb_newsletter_result h2 {
+	color: var(--text-light) !important;
+	font-size: 18px;
+	line-height: 1.4em;
+}
+
+/* Gallery */
+.fd-gallery.no-lightbox a {
+	pointer-events: none !important;
+}
+.fd-gallery.no-lightbox .et-pb-slider-arrows a {
+	pointer-events: auto !important;
+}
+
+
+
+
+/**********************************
+	Responsive
+***********************************/
 
 @media only screen and (min-width: 981px) {
 	/*Header CTA*/
