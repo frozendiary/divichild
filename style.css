@@ -6,13 +6,14 @@
  Author:         Frozendiary
  Author URI:     http://frozendiary.com
  Template:       Divi
- Version:        1.0.7
+ Version:        1.0.8
 */
 
 /*Classes
 
 .fd-header-cta
 .fd-reverse-row
+.fd-centered-v
 .fd-email-optin-1
 .fd-footer-nav
 .fd-list-o
@@ -20,6 +21,7 @@
 .fd-list-col-3
 .fd-list-col-4
 .fd-gallery.no-lightbox
+
 
 */
 
@@ -196,6 +198,11 @@
 }
 .fd-gallery.no-lightbox .et-pb-slider-arrows a {
 	pointer-events: auto !important;
+}
+
+/* Vertically Centered Column */
+.fd-centered-v {
+	margin: auto;
 }
 
 
